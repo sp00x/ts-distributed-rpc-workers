@@ -1,0 +1,45 @@
+{
+  "name": "@sp00x/distributed-rpc-workers",
+  "version": "0.0.1",
+  "description": "Distributed RPC/workers/microservices server/client framework",
+  "keywords": [
+    "rpc", "microservice", "workers", "distributed"
+  ],
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "prepublish": "tsc -p .",
+    "build": "tsc -p .",
+    "test": "mocha -r ts-node/register spec/*.spec.ts",
+    "test-both": "node-ts testbed/test-both"
+  },
+  "author": {
+    "name": "Rune Bjerke",
+    "email": "github.public@green.spoox.org",
+    "url": "http://spoox.org"
+  },
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "@sp00x/log-interface": "git+https://github.com/sp00x/ts-log-interface.git",
+    "ansi-styles": "^3.2.1",
+    "circular-json": "^0.5.1",
+    "queue": "^4.4.2",
+    "source-map-support": "^0.5.3",
+    "sprintf-js": "^1.1.1",
+    "uuid4": "^1.0.0",
+    "ws": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/circular-json": "^0.4.0",
+    "@types/mocha": "^5.0.0",
+    "@types/node": "*",
+    "@types/sprintf-js": "^1.1.0",
+    "@types/ws": "^4.0.1",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5",
+    "ts-node": "^5.0.1",
+    "typescript": "*"
+  }
+}
